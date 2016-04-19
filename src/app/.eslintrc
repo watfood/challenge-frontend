@@ -1,0 +1,21 @@
+{
+  "root": true,
+  "extends": "airbnb/legacy",
+  "plugins": ["angular"],
+  "env": {
+    "browser": true
+  },
+  "globals": {
+    "angular": true,
+    "_": true
+  },
+  "rules": {
+    "indent": [2, 4],
+    "quotes": [2, "double", "avoid-escape"],
+    "comma-dangle": [2, "never"],
+    "strict": [2, "function"],
+    "padded-blocks": [2, "always"],
+    "no-use-before-define": 0,
+    "spaced-comment": [2, "always", { "exceptions": ["/"] }]
+  }
+}

@@ -1,0 +1,14 @@
+<h2>Example Directive</h2>
+<p>Hello, World!</p>
+
+<p>Third Item Value:</p>
+<dl>
+    <dt>Padded:</dt>
+    <dd>{{vm.formattedValue}}</dd>
+    <dt>Filter:</dt>
+    <dd>{{vm.rawValue|number}}</dd>
+</dl>
+
+<ul>
+    <li ng-repeat="item in vm.data">{{item.label}}</li>
+</ul>

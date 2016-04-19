@@ -1,0 +1,15 @@
+{
+  "globals": {
+    "browser": false,
+    "element": false,
+    "by": false,
+    "$": false,
+    "$$": false
+  },
+  "rules": {
+    "no-console": 0,
+    "no-use-before-define": 0,
+    "no-param-reassign": 0,
+    "spaced-comment": [2, "always", { "exceptions": ["/"] }]
+  }
+}
