@@ -58,7 +58,7 @@
     }
 
     /** @ngInject */
-    function ExampleDirectiveController() {
+    function ExampleDirectiveController($log, MockAPI) {
 
         var vm = this;
 
@@ -78,6 +78,21 @@
             label: "Item 5",
             value: 5000
         }];
+
+        MockAPI
+           .get({ browser: [
+               "chrome",
+               "ie",
+               "safari",
+               "firefox",
+               "chrome-mobile",
+               "androidwebkit"
+           ] })
+           .then(function allData(data) {
+
+               $log.info("The MockAPI data is: ", data);
+
+           });
 
     }
 
